@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AppStoreCVCell" customModule="AppStorePage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="170"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="dCK-Uh-0v9">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="s0o-q2-rQh"/>
+                            <constraint firstAttribute="height" constant="80" id="uq4-xu-iu0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="熊猫博士赛车车手" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbo-Rq-5i6">
+                        <rect key="frame" x="10" y="95" width="80" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="N0h-GO-zVC"/>
+                            <constraint firstAttribute="width" constant="80" id="rkI-DQ-kiE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="游戏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsT-hU-vKI">
+                        <rect key="frame" x="10" y="130" width="80" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Iw7-cs-UoK"/>
+                            <constraint firstAttribute="height" constant="15" id="RgU-X8-wC1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥18.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPm-bc-POE">
+                        <rect key="frame" x="10" y="150" width="80" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="SDk-n0-Tr8"/>
+                            <constraint firstAttribute="width" constant="80" id="j46-Th-JL4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="CPm-bc-POE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="7B6-f5-9wa"/>
+                <constraint firstItem="kbo-Rq-5i6" firstAttribute="top" secondItem="dCK-Uh-0v9" secondAttribute="bottom" constant="5" id="E5f-Re-ocv"/>
+                <constraint firstItem="dCK-Uh-0v9" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="bTY-GL-h38"/>
+                <constraint firstItem="KsT-hU-vKI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="cOS-eF-vFh"/>
+                <constraint firstItem="kbo-Rq-5i6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="enh-3w-9b7"/>
+                <constraint firstItem="dCK-Uh-0v9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="fLn-gV-2bM"/>
+                <constraint firstItem="CPm-bc-POE" firstAttribute="top" secondItem="KsT-hU-vKI" secondAttribute="bottom" constant="5" id="fjK-Or-WwG"/>
+                <constraint firstItem="KsT-hU-vKI" firstAttribute="top" secondItem="kbo-Rq-5i6" secondAttribute="bottom" constant="5" id="pmv-sx-Xcn"/>
+                <constraint firstItem="dCK-Uh-0v9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="wer-VA-c9J"/>
+            </constraints>
+            <size key="customSize" width="120" height="190"/>
+            <connections>
+                <outlet property="appIconImageView" destination="dCK-Uh-0v9" id="Lvg-r2-Olj"/>
+                <outlet property="appNameLabel" destination="kbo-Rq-5i6" id="OQm-3x-5NR"/>
+                <outlet property="appPriceLabel" destination="CPm-bc-POE" id="t9z-Wc-Z18"/>
+                <outlet property="appTypeLabel" destination="KsT-hU-vKI" id="iwq-ST-wOP"/>
+            </connections>
+            <point key="canvasLocation" x="580" y="567"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Icon.png" width="160" height="160"/>
+    </resources>
+</document>
